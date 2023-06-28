@@ -1,3 +1,5 @@
+#!name=贴吧签到
+#!desc=仅托管 无维护
 [Script]
 贴吧签到 = type=cron,cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
 
