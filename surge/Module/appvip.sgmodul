@@ -1,8 +1,8 @@
 #!name=VIP合集
 #!desc=WPS 百度网盘 扫描全能王 彩云 
 [Script]
-# >WPS vip
-wps解锁 = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js,type=http-response,pattern=^https?:\/\/[a-z-]*account\.wps\.c(n|om)(:\d+|)\/api\/users
+# >WPS超级会员
+WPSOffice_2 = type=http-response, pattern=^https:\/\/(vas|account)\.wps\.cn\/(query\/api\/v\d\/list_purchase_info|api\/users\/\d+\/overview), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/WPSOffice.js, timeout=60, script-update-interval=0
 # > 扫描全能王 pro
 全能扫描 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/camscanner.js,type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,script-update-interval=0
 # > 彩云天气 svip
@@ -10,4 +10,4 @@ wps解锁 = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa
 # > 百度云盘 解锁
 百度云盘 = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/bdcloud.js,script-update-interval=0
 [MITM]
-hostname=%APPEND%*account.wps.cn,*account.wps.com,ap*.intsig.net,biz.caiyunapp.com,pan.baidu.com
+hostname=%APPEND% vas.wps.cn,account.wps.cn,ap*.intsig.net,biz.caiyunapp.com,pan.baidu.com
