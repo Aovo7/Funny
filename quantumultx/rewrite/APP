@@ -1,5 +1,6 @@
 #!name=APP解锁合集
-#!desc=WPS 彩云 扫描 百度阿里网盘 百度文库 不挂科
+#!desc=WPS 彩云 扫描 百度阿里网盘 百度文库 不挂科 京东比价
+
 [rewrite_local]
 # > WPS 会员
 ^https:\/\/(vas|account)\.wps\.cn\/(query\/api\/v\d\/list_purchase_info|api\/users\/\d+\/overview) url script-response-body https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/WPSOffice.js
@@ -17,5 +18,8 @@ https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body
 ^https:\/\/appwk\.baidu\.com\/naapi\/(user\/getinfo|doc\/getdocdownloadcopywriter) url script-response-body https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/BaiduLibrary.conf
 #>不挂科
 ^https:\/\/appwk\.baidu\.com\/bgk\/(user\/getinfo|doc\/(getdocdownloadcopywriter|quedocsearch\?)) url script-response-body https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/BuGuaKe.js
+#>京东比价
+^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/deezertidal/private/main/jdprice.js
+
 [mitm] 
-hostname=*.caiyunapp.*,*cyapi*,vas.wps.cn, account.wps.cn,ap*.intsig.net,pan.baidu.com,*.aliyundrive.com,appwk.baidu.com
+hostname=*.caiyunapp.*,*cyapi*,vas.wps.cn, account.wps.cn,ap*.intsig.net,pan.baidu.com,*.aliyundrive.com,appwk.baidu.com,api.m.jd.com
