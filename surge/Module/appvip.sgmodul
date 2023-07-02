@@ -1,5 +1,5 @@
 #!name=VIP合集
-#!desc=WPS 百度网盘 扫描全能王 彩云 百度文库 克拉壁纸
+#!desc=京东比价 WPS 百度网盘 扫描全能王 彩云 百度文库 克拉壁纸
 [Script]
 #>京东比价
 京东比价 = type=http-response,requires-body=1,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/deezertidal/private/main/jdprice.js
