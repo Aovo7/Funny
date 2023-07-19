@@ -1,10 +1,7 @@
 #!name=面板整合
-#!desc=节点IP 节点入口/落地 流媒体 GPT 
+#!desc=节点信息（带GPT解锁） 流媒体 
 
 [Panel]
-#>节点IP查询（已注释，需启用时自行去掉注释）
-#IP-Check = script-name=IP-Check, title="节点详情", content="请刷新", style=info, update-interval=1
-
 #>NetISP 面板
 #!desc=可在工具>脚本编辑器>左下角齿轮图标>$persistentStore找到 KeyNetisp 中更改是否在面板中显示  内网或者本机 true or false
 #!system=ios
@@ -14,9 +11,6 @@ NetISP = script-name=NetISP,update-interval=43200
 stream-all = script-name=stream-all, title="流媒体解锁检测", content="请刷新面板", update-interval=3600
 
 [Script]
-#>节点ip查询
-#IP-Check = type=generic,timeout=3,script-path=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/IP-Check/Moore/IP-Check.js
-
 #>NetISP 面板
 NetISP = type=generic,timeout=8,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/Netisp.js
 
