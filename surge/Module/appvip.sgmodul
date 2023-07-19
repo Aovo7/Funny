@@ -14,6 +14,12 @@ WPSOffice_2 = type=http-response, pattern=^https:\/\/(vas|account)\.wps\.cn\/(qu
 百度文库=type=http-response,pattern=^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo,requires-body=1,script-path=https://github.com/deezertidal/private/raw/master/js-backup/Crack/baidulibrary.js
 #>克拉壁纸
 克拉壁纸=type=http-response,pattern=^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll),requires-body=1,script-path=https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/clarity.js
-[MITM]
-hostname = %APPEND% vas.wps.cn,account.wps.cn,ap*.intsig.net,biz.caiyunapp.com,pan.baidu.com,appwk.baidu.com,claritywallpaper.com
+#>Youtube去广告
+youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence)\?,requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.request.beta.js
+youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\?,requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.response.beta.js
 
+[MITM]
+hostname = %APPEND% vas.wps.cn,account.wps.cn,ap*.intsig.net,biz.caiyunapp.com,pan.baidu.com,appwk.baidu.com,claritywallpaper.com,*.googlevideo.com, youtubei.googleapis.com
+
+[Map Local]
+^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data="https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/blank.txt" header="Content-Type: application/vnd.yt-ump"
