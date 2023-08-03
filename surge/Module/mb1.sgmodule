@@ -2,17 +2,18 @@
 #!desc=节点信息（带GPT解锁） 流媒体 
 
 [Panel]
+#>流媒体解锁查询
+stream-all = script-name=stream-all, title="流媒体解锁检测", content="请刷新面板", update-interval=3600
+
 #>NetISP 面板
 #!desc=可在工具>脚本编辑器>左下角齿轮图标>$persistentStore找到 KeyNetisp 中更改是否在面板中显示  内网或者本机 true or false
 #!system=ios
 NetISP = script-name=NetISP,update-interval=43200
 
-#>流媒体解锁查询
-stream-all = script-name=stream-all, title="流媒体解锁检测", content="请刷新面板", update-interval=3600
-
 [Script]
+#>流媒体解锁查询
+stream-all = type=generic, timeout=15, script-path=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Stream-All/Moore/Stream-All.js
+
 #>NetISP 面板
 NetISP = type=generic,timeout=8,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/Netisp.js
 
-#>流媒体解锁查询
-stream-all = type=generic, timeout=15, script-path=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Stream-All/Moore/Stream-All.js
