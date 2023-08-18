@@ -11,8 +11,8 @@
 ^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? url script-response-body https://raw.githubusercontent.com/githubdulong/Script/master/CamScanner.js
 #>百度网盘
 https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
-#>阿里网盘
-^https?:\/\/(api|member)\.aliyundrive\.com url script-response-body https://raw.githubusercontent.com/gjwj666/qx/main/aliy.js
+#>阿里云盘 
+^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js
 #>百度文库
 ^https:\/\/appwk\.baidu\.com\/(naapi\/(recommend\/recommenddoc|wkcircle\/messagetab|search\/wkhotwords|api\/wmadopt)|appapi\/(search\/hot|donate\/detail)|xpage\/interface\/wknaad) url reject
 ^https:\/\/appwk\.baidu\.com\/naapi\/(user\/getinfo|doc\/getdocdownloadcopywriter) url script-response-body https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/BaiduLibrary.conf
@@ -22,4 +22,4 @@ https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body
 ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/deezertidal/private/main/jdprice.js
 
 [mitm] 
-hostname=*.caiyunapp.*,*cyapi*,vas.wps.cn, account.wps.cn,ap*.intsig.net,pan.baidu.com,*.aliyundrive.com,appwk.baidu.com,api.m.jd.com
+hostname=*.caiyunapp.*,*cyapi*,vas.wps.cn, account.wps.cn,ap*.intsig.net,pan.baidu.com,, *.alipan.com,appwk.baidu.com,api.m.jd.com
