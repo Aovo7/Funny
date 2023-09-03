@@ -1,5 +1,5 @@
 #!name=VIP合集
-#!desc=WPS 百度网盘 ADGuard 扫描全能王 彩云 百度文库 克拉壁纸 Youtube去广告 Nicegram（附带网站修复）
+#!desc=WPS 百度网盘 ADGuard 扫描全能王 彩云 百度文库 克拉壁纸 Youtube去广告 Nicegram（附带网站修复）JD比价
 [Script]
 
 # >WPS
@@ -21,9 +21,11 @@ youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com
 youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\?,requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.response.beta.js
 #>Nicegram会员
 Nicegram会员=type=http-request,pattern=^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Nicegram/Script/Nicegram.js,script-update-interval=0
+# > 京东比价
+http-response ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) requires-body=1,script-path= https://raw.githubusercontent.com/zwf234/rules/master/js/jd_price.js
 
 [MITM]
-hostname = %APPEND% yfamily.*,vas.wps.cn,account.wps.cn,ap*.intsig.net,*.cyapi.cn, adx.sogaha.cn,pan.baidu.com,appwk.baidu.com,claritywallpaper.com,*.googlevideo.com, youtubei.googleapis.com,api.guoqi365.com,mobile-api.adguard.org
+hostname = %APPEND% yfamily.*,vas.wps.cn,account.wps.cn,ap*.intsig.net,*.cyapi.cn, adx.sogaha.cn,pan.baidu.com,appwk.baidu.com,claritywallpaper.com,*.googlevideo.com, youtubei.googleapis.com,api.guoqi365.com,mobile-api.adguard.org,api.m.jd.com
 
 [URL Rewrite]
 #>保持yfamily.ml的远程资源有效性
@@ -33,14 +35,3 @@ hostname = %APPEND% yfamily.*,vas.wps.cn,account.wps.cn,ap*.intsig.net,*.cyapi.c
 [Map Local]
 #>Youtube
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data="https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/blank.txt" header="Content-Type: application/vnd.yt-ump"
-
-#!name=京东比价
-#!desc=京东历史价格
-#!system=ios
-
-[Script]
-# > 京东比价
-http-response ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) requires-body=1,script-path= https://raw.githubusercontent.com/zwf234/rules/master/js/jd_price.js
-
-[MITM]
-hostname = %APPEND% api.m.jd.com
