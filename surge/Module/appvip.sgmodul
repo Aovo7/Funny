@@ -1,11 +1,13 @@
 #!name=VIP合集
-#!desc=WPS 百度网盘 扫描全能王 彩云 百度文库 克拉壁纸 Youtube去广告 Nicegram（附带网站修复）
+#!desc=WPS 百度网盘 ADGuard 扫描全能王 彩云 百度文库 克拉壁纸 Youtube去广告 Nicegram（附带网站修复）
 [Script]
 
 # >WPS
 WPSOffice_2 = type=http-response, pattern=^https:\/\/(vas|account)\.wps\.cn\/(query\/api\/v\d\/list_purchase_info|api\/users\/\d+\/overview), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/WPSOffice.js, timeout=60, script-update-interval=0
 # > 扫描全能王 pro
 全能扫描 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/camscanner.js,type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,script-update-interval=0
+# > AdGuard
+AdGuard=type=http-response,pattern=^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt,requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/AdGuardProCrack.js
 # > 彩云天气 svip
 彩云天气 = type=http-response,pattern=^https?:\/\/(biz|wrapper)\.cyapi\.cn\/(.+\/(user.+|visitors|activity)|p\/v\d\/vip_info),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js
 # > 百度云盘 解锁
@@ -21,7 +23,7 @@ youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.c
 Nicegram会员=type=http-request,pattern=^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Nicegram/Script/Nicegram.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% yfamily.*,vas.wps.cn,account.wps.cn,ap*.intsig.net,*.cyapi.cn, adx.sogaha.cn,pan.baidu.com,appwk.baidu.com,claritywallpaper.com,*.googlevideo.com, youtubei.googleapis.com,api.guoqi365.com
+hostname = %APPEND% yfamily.*,vas.wps.cn,account.wps.cn,ap*.intsig.net,*.cyapi.cn, adx.sogaha.cn,pan.baidu.com,appwk.baidu.com,claritywallpaper.com,*.googlevideo.com, youtubei.googleapis.com,api.guoqi365.com,mobile-api.adguard.org
 
 [URL Rewrite]
 #>保持yfamily.ml的远程资源有效性
@@ -31,3 +33,14 @@ hostname = %APPEND% yfamily.*,vas.wps.cn,account.wps.cn,ap*.intsig.net,*.cyapi.c
 [Map Local]
 #>Youtube
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data="https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/blank.txt" header="Content-Type: application/vnd.yt-ump"
+
+#!name=京东比价
+#!desc=京东历史价格
+#!system=ios
+
+[Script]
+# > 京东比价
+http-response ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) requires-body=1,script-path= https://raw.githubusercontent.com/zwf234/rules/master/js/jd_price.js
+
+[MITM]
+hostname = %APPEND% api.m.jd.com
