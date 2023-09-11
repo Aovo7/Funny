@@ -1,6 +1,5 @@
 #!name=URL重定向
-#!desc=常用搜索类重定向
-# author:Aovo7
+#!desc=常用搜索类重定向 by:Aovo7
 
 [URL Rewrite]
 # Bing搜索
