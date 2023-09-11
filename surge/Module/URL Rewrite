@@ -19,7 +19,7 @@
 #淘宝
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=tb\+ taobao://s.taobao.com?q= 302
 #京东
-^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=jd\+ openjd://virtual?params={"des":"productList","keyWord":"%@","from":"search","category":"jump"} 302
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=jd\+ openapp.jdmobile://virtual?params={"des":"productList","keyWord":"商品名称","from":"search","category":"jump"} 302
 #B 站
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=bl\+ bilibili://search?keyword= 302
 #点评
