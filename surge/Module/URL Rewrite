@@ -2,30 +2,24 @@
 #!desc=常用搜索类重定向 by:Aovo7
 
 [URL Rewrite]
-# Bing搜索
-^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=b\+ https://www.bing.com/search?q= 302
 # GitHub
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=gh\+ https://github.com/search?q= 302
 # 谷歌搜索
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=g\+ https://www.google.com/search?q= 302
-# 谷歌 cn-com header
+# 谷歌 cn-com 
 ^http:\/\/www\.google\.cn https://www.google.com 302
-
-
-# > URL Rewrite 跳转至APP
-#知乎
+# URL Rewrite 跳转
+# 知乎
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=zh\+ zhihu://search?q= 302
-#淘宝
+# 淘宝
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=tb\+ taobao://s.taobao.com?q= 302
-#京东
-^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=jd\+ openapp.jdmobile://virtual?params={{{"des":"productList","keyWord":"[prompt]","from":"search","category":"jump"}}}
-
- 302
-#B 站
+# 京东
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=jd\+ openapp.jdmobile://virtual?params={{{"des":"productList","keyWord":"[prompt]","from":"search","category":"jump"}}} 302
+# B 站
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=bl\+ bilibili://search?keyword= 302
-#点评
+# 点评
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=dp\+ dianping://searchshoplist? 302
-#豆瓣
+# 豆瓣
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=db\+ douban:///search? 302
-#Youtube
+# Youtube
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=yt\+ youtube://results?q= 302
