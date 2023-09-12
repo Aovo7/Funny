@@ -1,0 +1,31 @@
+#!name=URL重定向
+#!desc=常用搜索类重定向 by：Aovo7
+
+[rewrite_local]
+
+# GitHub
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=gh\+ url 302 https://github.com/search?q=
+# 谷歌搜索
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=g\+ url 302 https://www.google.com/search?q=
+#Bing搜索
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=b\+ url 302 https://www.bing.com/search?q= 
+# 谷歌 cn-com 
+^http:\/\/www\.google\.cn url 302 https://www.google.com
+# URL Rewrite 跳转
+# 知乎
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=zh\+ url 302 zhihu://search?q=
+# 淘宝
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=tb\+ url 302 taobao://s.taobao.com?q=
+# 京东
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=jd\+ url 302 openapp.jdmobile://virtual?params={{{"des":"productList","keyWord":"[prompt]","from":"search","category":"jump"}}}
+# B 站
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=bl\+ url 302 bilibili://search?keyword=
+# 点评
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=dp\+ url 302 dianping://searchshoplist?
+# 豆瓣
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=db\+ url 302 douban:///search?
+# Youtube
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=yt\+ url 302 youtube://results?q=
+
+[MITM]
+hostname = -*.apple.com, -*.icloud.com, -*.mzstatic.com, *:
