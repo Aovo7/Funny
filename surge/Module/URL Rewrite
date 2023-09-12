@@ -7,7 +7,7 @@
 # 谷歌搜索
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=g\+ https://www.google.com/search?q= 302
 #Bing搜索
-^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=b\+ https://www.bing.com/search?q= 
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=b\+ https://www.bing.com/search?q= 302
 # 谷歌 cn-com 
 ^http:\/\/www\.google\.cn https://www.google.com 302
 
