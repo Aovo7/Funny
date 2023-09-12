@@ -25,3 +25,7 @@
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=db\+ douban:///search? 302
 # Youtube
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=yt\+ youtube://results?q= 302
+
+
+[MITM]
+hostname = -*.apple.com, -*.icloud.com, -*.mzstatic.com, *:0
