@@ -71,6 +71,6 @@ FINAL,PROXY
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=yt\+ youtube://results?q= 302
 
 [MITM]
-hostname = *baidu.com,*github.com,*google.com,*google.cn,m.baidu.comtonglejia.com,wmy.com
+hostname = *baidu.com,*github.com,*google.com,*google.cn,m.baidu.com,tonglejia.com,wmy.com
 ca-passphrase = 
 ca-p12 = 
