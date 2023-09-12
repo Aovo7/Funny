@@ -28,4 +28,4 @@
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=yt\+ url 302 youtube://results?q=
 
 [MITM]
-hostname = -*.apple.com, -*.icloud.com, -*.mzstatic.com, *:
+hostname = *baidu.com, *github.com, *google.com, *google.cn
