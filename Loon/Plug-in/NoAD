@@ -1,0 +1,73 @@
+#!name = MyBlockAds
+#!desc = AD
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1038.png
+
+[Rule]
+
+#微博开屏
+DOMAIN, adstrategy.biz.weibo.com,REJECT
+DOMAIN, kadmimage.biz.weibo.com,REJECT
+DOMAIN, sdkaction.biz.weibo.com,REJECT
+DOMAIN, sdkclick.biz.weibo.com,REJECT
+DOMAIN, sdkmonitor.biz.weibo.com,REJECT
+# 网易云音乐
+DOMAIN, gdt.qq.com,REJECT
+DOMAIN, httpdns.n.netease.com,REJECT
+DOMAIN, iadmat.nosdn.127.net,REJECT
+DOMAIN, iadmusicmat.music.126.net,REJECT
+DOMAIN, iadmusicmatvideo.music.126.net,REJECT
+DOMAIN-SUFFIX, 163jiasu.com,REJECT
+# 高德地图
+DOMAIN, amap-aos-info-nogw.amap.com,REJECT
+DOMAIN, awaken.amap.com,REJECT
+DOMAIN, free-aos-cdn-image.amap.com,REJECT
+# 美团
+DOMAIN, al-log.d.meituan.net,REJECT
+DOMAIN, babel-statistics-android.d.meituan.net,REJECT
+DOMAIN, maplocatesdksnapshot.d.meituan.net,REJECT
+DOMAIN, metrics-picture.d.meituan.net,REJECT
+DOMAIN, route-stats.d.meituan.net,REJECT
+# 百度贴吧
+IP-CIDR, 180.76.76.200/32,REJECT
+# 哔哩哔哩
+DOMAIN, mall.bilibili.com,REJECT
+DOMAIN, passport.bilibili.com,REJECT
+#人人视频开屏
+DOMAIN, cruiser.bayescom.cn,REJECT
+
+[Rewrite]
+
+#人人视频
+^https:\/\/mi-eo\.gdt\.qq\.com\/gdt_mview\.fcg\?spsa= - reject
+#微博
+^https:\/\/api\.weibo\.cn\/2\/statuses\/extend\?gsid=_2A25J-NI_ - reject
+#大众点评
+^https:\/\/img\.meituan\.net\/dpmobile\/.+93241\.png - reject
+# 饿了么 //elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com
+^https:\/\/elemecdn.com\/.+\/sitemap - reject
+^https:\/\/fuss10.elemecdn.com\/.+\/w\/640\/h\/\d{3,4} - reject
+^https:\/\/fuss10.elemecdn.com\/.+\/w\/750\/h\/\d{3,4} - reject
+^https:\/\/fuss10.elemecdn.com\/.+\.mp4 - reject
+^https:\/\/www1.elecfans.com\/www\/delivery - reject
+# 美团外卖 //*.meituan.com
+^https?:\/\/.*\.meituan\.com\/(client\/getInitiateImage|api\/.+\/startpicture) - reject
+# 京东 //api.m.jd.com
+^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - reject
+# 交管12123 //gab.122.gov.cn
+^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ - reject
+# 肯德基 //res.kfc.com.cn
+^https:\/\/res\.kfc\.com\.cn\/advertisement - reject
+# 拼多多 //api.pinduoduo.com, api.yangkeduo.com
+^https:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash - reject
+# 闲鱼 //gw.alicdn.com, acs.m.taobao.com
+^https:\/\/gw\.alicdn\.com\/mt\/ - reject
+^https:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4} - reject
+^https:\/\/gw\.alicdn\.com\/tps\/.+\d{3,4}-\d{4} - reject
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome - reject
+# 中国移动 //clientaccess.10086.cn, wap.js.10086.cn
+^https:\/\/clientaccess\.10086\.cn\/biz-orange\/DN\/init\/startInit - reject
+^https:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query - reject
+
+[MITM]
+
+hostname = elemecdn.com,fuss10.elemecdn.com,www1.elecfans.com,*.meituan.com,api.m.jd.com,gab.122.gov.cn,res.kfc.com.cn,gw.alicdn.com,acs.m.taobao.com,clientaccess.10086.cn,wap.js.10086.cn,api.weibo.cn,mi-eo.gdt.qq.com
