@@ -1,5 +1,5 @@
-#!name = MyBlockAds
-#!desc = AD
+#!name = NoAD
+#!desc = 
 #!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1038.png
 
 [Rule]
