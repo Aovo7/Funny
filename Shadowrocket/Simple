@@ -57,6 +57,8 @@ FINAL,PROXY
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=yh\+ https://greasyfork.org/zh-CN/scripts?q=$1 302
 #无追搜索
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=wz\+ https://www.wuzhuiso.com/s?q=$1 302
+#阿里云盘资源搜索
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=al\+ https://www.pansearch.me/search?keyword= 302
 # 谷歌 cn-com 
 ^http:\/\/www\.google\.cn https://www.google.com 302
 # 知乎
