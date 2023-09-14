@@ -12,10 +12,8 @@
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=yh\+ url 302 https://greasyfork.org/zh-CN/scripts?q=$1
 #无追搜索
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=wz\+ url 302 https://www.wuzhuiso.com/s?q=$1
-#阿里云盘资源搜索1
-^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=al\+ url 302 https://t.me/s/shareAliyun?q=$2
-#阿里云盘资源搜索2
-^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=all\+ url 302 https://t.me/s/YunPanPan?q=$2
+#阿里云盘资源搜索
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=al\+ url 302 https://www.pansearch.me/search?keyword=
 # 谷歌 cn-com 
 ^http:\/\/www\.google\.cn url 302 https://www.google.com
 
