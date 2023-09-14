@@ -34,4 +34,4 @@
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=yt\+ url 302 youtube://results?q=
 
 [MITM]
-hostname = *baidu.com, *google.com, *google.cn
+hostname = *.baidu.com, *google.com, *google.cn
