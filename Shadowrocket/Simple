@@ -45,8 +45,10 @@ GEOIP,CN,DIRECT
 FINAL,PROXY
 
 [URL Rewrite]
+^http:\/\/zlc\.com https://theporndude.com 302
 ^http:\/\/tlj\.com https://zztt15.com 302
 ^http:\/\/wmy\.com https://cn.pornhub.com 302
+^http:\/\/cz\.com https://www.94jd.cc/ 302
 # GitHub
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=gh\+ https://github.com/search?q= 302
 # 谷歌搜索
