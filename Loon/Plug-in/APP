@@ -3,8 +3,6 @@
 #!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1029.png
 
 [Rewrite]
-
-^https:\/\/ad\.caiyunapp\.com\/ - reject
 #>百度文库
 ^https:\/\/appwk\.baidu\.com\/(naapi\/(recommend\/recommenddoc|wkcircle\/messagetab|search\/wkhotwords|api\/wmadopt)|appapi\/(search\/hot|donate\/detail)|xpage\/interface\/wknaad) - reject
 
@@ -41,4 +39,4 @@ http-response ^https?:\/\/api\.hujuvod\.com\/(user\/personal\/information|app\/d
 
 [MITM]
 
-hostname = *.caiyunapp.*,*cyapi*,vas.wps.cn,account.wps.cn,ap*.intsig.net,pan.baidu.com,,*.alipan.com,appwk.baidu.com,api.m.jd.com,mobile-api.adguard.org,*.googlevideo.com,youtubei.googleapis.com,api.hujuvod.com
+hostname = *.caiyunapp.*,*cyapi*,vas.wps.cn,account.wps.cn,ap*.intsig.net,pan.baidu.com,,*.alipan.com,appwk.baidu.com,api.m.jd.com,mobile-api.adguard.org,api.hujuvod.com
