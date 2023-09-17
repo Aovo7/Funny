@@ -82,6 +82,6 @@ FINAL,PROXY
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=yt youtube://results?q= 302
 
 [MITM]
-hostname = %APPEND% *.google.cn,*.google.com.hk,*m.baidu.com,tlj.com,wmy.com,zlc.com,cz.com
+hostname = *.google.cn,*.google.com.hk,*m.baidu.com,tlj.com,wmy.com,zlc.com,cz.com
 ca-passphrase = 
 ca-p12 = 
