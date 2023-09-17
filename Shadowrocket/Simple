@@ -50,7 +50,7 @@ FINAL,PROXY
 ^http:\/\/wmy\.com https://cn.pornhub.com 302
 ^http:\/\/cz\.com https://www.94jd.cc/ 302
 # GitHub
-^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=gh\+ https://github.com/search?q= 302
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=gh+ https://github.com/search?q= 302
 # 谷歌搜索
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=g\+ https://www.google.com/search?q= 302
 #Bing搜索
