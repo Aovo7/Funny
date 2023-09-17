@@ -37,4 +37,4 @@
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=yt url 302 youtube://results?q=
 
 [MITM]
-hostname = %APPEND% *.google.cn, *.google.com.hk,*baidu.com
+hostname = %APPEND% *.google.cn, *.google.com.hk,*m.baidu.com
