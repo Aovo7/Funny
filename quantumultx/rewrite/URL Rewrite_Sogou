@@ -29,7 +29,7 @@
 # B 站
 ^https:\/\/m\.sogou\.com\/web\/sl\?keyword=bl url 302 bilibili://search?keyword=
 # 点评
-^https:\/\/m\.sogou\.com\/web\/sl\?keyword=dp url 302 dianping://searchshoplist?
+^https:\/\/m\.sogou\.com\/web\/sl\?keyword=dp url 302 dianping://search?keyword=
 # 豆瓣
 ^https:\/\/m\.sogou\.com\/web\/sl\?keyword=db url 302 douban:///search?
 # Youtube
