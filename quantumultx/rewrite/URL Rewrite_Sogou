@@ -26,6 +26,8 @@
 ^https:\/\/m\.sogou\.com\/web\/sl\?keyword=tb url 302 taobao://s.taobao.com?q=
 # 京东
 ^https:\/\/m\.sogou\.com\/web\/sl\?keyword=jd url 302 https://so.m.jd.com/ware/search.action?keyword=$1
+# 拼多多
+^https:\/\/m\.sogou\.com\/web\/sl\?keyword=jd url 302 dianping://searchshoplist?keyword=
 # B 站
 ^https:\/\/m\.sogou\.com\/web\/sl\?keyword=bl url 302 bilibili://search?keyword=
 # 点评
