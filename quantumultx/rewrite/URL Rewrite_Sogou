@@ -27,7 +27,7 @@
 # 京东
 ^https:\/\/m\.sogou\.com\/web\/sl\?keyword=jd url 302 https://so.m.jd.com/ware/search.action?keyword=$1
 # 拼多多
-^https:\/\/m\.sogou\.com\/web\/sl\?keyword=jd url 302 dianping://searchshoplist?keyword=
+^https:\/\/m\.sogou\.com\/web\/sl\?keyword=pdd url 302 pinduoduo://com.xunmeng.pinduoduo/http://mobile.yangkeduo.com/search_result.html?search_key=
 # B 站
 ^https:\/\/m\.sogou\.com\/web\/sl\?keyword=bl url 302 bilibili://search?keyword=
 # 点评
