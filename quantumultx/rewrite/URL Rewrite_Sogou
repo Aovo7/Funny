@@ -17,8 +17,9 @@
 #阿里云盘资源搜索
 ^https:\/\/m\.sogou\.com\/web\/sl\?keyword=al url 302 https://www.pansearch.me/search?keyword=
 # 谷歌 cn-com 
-^http:\/\/www\.google\.cn url 302 https://www.google.com
-^https?:\/\/(www.)?(g|google)\.com.hk url 302 https://www.google.com
+^https?://(www\.)?g\.cn url 302 https://www.google.com
+^https?://(www\.)?google\.cn url 302 https://www.google.com
+^https?://(www\.)?google\.cn/search url 302 https://www.google.com/search
 
 # URL Rewrite 跳转
 # 知乎
@@ -39,4 +40,4 @@
 ^https:\/\/m\.sogou\.com\/web\/sl\?keyword=yt url 302 youtube://results?q=
 
 [MITM]
-hostname = %APPEND% *.google.cn, *.google.com.hk,*sogou.com
+hostname = %APPEND% www.google.cn, www.g.cn,*sogou.com
