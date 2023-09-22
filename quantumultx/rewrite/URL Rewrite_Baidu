@@ -15,8 +15,9 @@
 #阿里云盘资源搜索
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=al\+ url 302 https://www.pansearch.me/search?keyword=
 # 谷歌 cn-com 
-^http:\/\/www\.google\.cn url 302 https://www.google.com
-^https?:\/\/(www.)?(g|google)\.com.hk url 302 https://www.google.com
+^https?://(www\.)?g\.cn url 302 https://www.google.com
+^https?://(www\.)?google\.cn url 302 https://www.google.com
+^https?://(www\.)?google\.cn/search url 302 https://www.google.com/search
 
 # URL Rewrite 跳转
 # 知乎
@@ -37,4 +38,4 @@
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=yt\+ url 302 youtube://results?q=
 
 [MITM]
-hostname = %APPEND% *.google.cn, *.google.com.hk,*m.baidu.com
+hostname = %APPEND% www.google.cn, www.g.cn,*m.baidu.com
