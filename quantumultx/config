@@ -45,8 +45,8 @@ server=/*weixin.com/119.29.29.29
 static=Netflix, 自选, 🇭🇰HongKong, 🇸🇬SG, proxy, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/netflix(old).png
 static=Disney+, 自选, 🇭🇰HongKong, 🇸🇬SG, proxy, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/disney(blue).png
 static=自选, server-tag-regex=新加坡|Sin|🇸🇬, img-url=https://raw.githubusercontent.com/Toperlock/Quantumult/main/icon/Shin-chan/Shin-chan-1078.png
+static=Chatgpt, server-tag-regex=(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|美|禁)).)*$, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ChatGPT-green.png
 
-url-latency-benchmark=Chatgpt, server-tag-regex=(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|美|禁)).)*$, check-interval=600, tolerance=0, alive-checking=false, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ChatGPT-green.png
 url-latency-benchmark=🇭🇰HongKong, server-tag-regex=(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|美|禁)).)*$, check-interval=86400, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/shoujiqiyuan/PokemonGOforQuanX/master/IconSet/001.png
 url-latency-benchmark=🇸🇬SG, server-tag-regex=(?=.*(新|狮|獅|SG|(?i)Singapore))^((?!(港|台|日|韩|美)).)*$, check-interval=86400, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/shoujiqiyuan/PokemonGOforQuanX/master/IconSet/X008.png
 
@@ -59,6 +59,7 @@ url-latency-benchmark=🇸🇬SG, server-tag-regex=(?=.*(新|狮|獅|SG|(?i)Sing
 [filter_remote]
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list, tag=Apple, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Emby/Emby.list, tag=Emby, force-policy=Proxy, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/OpenAI/OpenAI.list, tag=OpenAi, force-policy=Chatgpt, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Google/Google.list, tag=Google, force-policy=proxy, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/YouTube/YouTube.list, tag=Youtube, force-policy=proxy, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Netflix/Netflix.list, tag=Netflix, force-policy=Netflix, update-interval=172800, opt-parser=true, enabled=true
@@ -78,13 +79,7 @@ https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Tool/Loon/Plugin/Remove_splash_s
 [filter_local]
 #防止循环请求
 ip-cidr, 0.0.0.0/32, reject, no-resolve
-#openai
-host-suffix, imap.gmail.com, proxy
-host-suffix, openai.com, Chatgpt
-host-keyword, api.revenuecat, Chatgpt
-host-suffix, identrust.com, Chatgpt
-host-keyword, openai, Chatgpt
-host-suffix, auth0.com, Chatgpt
+
 # > 一些比较容易忽视的分流
 host-suffix, kuwo.cn, direct
 host, gg.caixin.com, direct
