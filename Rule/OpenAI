@@ -17,4 +17,6 @@ HOST-SUFFIX,intercomcdn.com
 HOST-SUFFIX,poe.com
 HOST-SUFFIX,sentry.io
 HOST-SUFFIX,stripe.com
+HOST-SUFFIX,revenuecat.com
+HOST,api.statsig.com
 HOST-KEYWORD,openai
