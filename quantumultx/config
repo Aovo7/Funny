@@ -5,14 +5,10 @@ server_check_url= http://www.gstatic.com/generate_204
 # > 服务器测试超时时间 (毫秒)
 server_check_timeout = 3000
 # > 用于Check节点IP地址(以下geo_location_checker任选一个即可)
-;geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
-
 # 中文显示地区
 geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
-
 # 显示英文名称及国旗
 ;geo_location_checker=http://ifconfig.co/json, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IPConfig.js
-
 # > 功能强大的解析器，用于引用资源的转换
 resource_parser_url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
 # > 下列路径将不经过QuanX的处理
@@ -29,23 +25,25 @@ udp_drop_list=443
 #prefer-doh3
 no-ipv6
 no-system
-server=114.114.114.114
-server=202.141.176.93 
-server=202.141.178.13
-server=117.50.10.10
+server=8.8.8.8
+server=1.1.1.1
 server=223.5.5.5
-server=119.29.29.29:53
-server=119.28.28.28
-#doh-server = https://223.5.5.5/dns-query, https://223.6.6.6/dns-query
+server=114.114.114.114
+server=119.29.29.29
+doh-server=https://dns.alidns.com/dns-query
+#doh-server=https://cloudflare-dns.com/dns-query
+#doh-server=https://dns.google/dns-query
+#doh-server=https://dns-family.adguard.com/dns-query
 server=/*icloud.com/119.29.29.29
 server=/*icloud.com.cn/119.29.29.29
 server=/*tencent.com/119.29.29.29
 server=/*weixin.com/119.29.29.29
 [policy]
-static=Netflix, 自选, 🇭🇰HongKong, 🇸🇬SG, proxy, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/netflix(old).png
-static=Disney+, 自选, 🇭🇰HongKong, 🇸🇬SG, proxy, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/disney(blue).png
-static=自选, server-tag-regex=新加坡|Sin|🇸🇬, img-url=https://raw.githubusercontent.com/Toperlock/Quantumult/main/icon/Shin-chan/Shin-chan-1078.png
+static=Proxy/Direct, proxy, direct, img-url=https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/QX/Quantumult_X.png
 static=Chatgpt, server-tag-regex=(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|美|禁)).)*$, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ChatGPT-green.png
+static=Netflix, 🇸🇬SG, 🇭🇰HongKong, 自选, proxy, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/netflix(old).png
+static=自选, server-tag-regex=新加坡|Sin|🇸🇬, img-url=https://raw.githubusercontent.com/Toperlock/Quantumult/main/icon/Shin-chan/Shin-chan-1078.png
+
 
 url-latency-benchmark=🇭🇰HongKong, server-tag-regex=(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|美|禁)).)*$, check-interval=86400, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/shoujiqiyuan/PokemonGOforQuanX/master/IconSet/001.png
 url-latency-benchmark=🇸🇬SG, server-tag-regex=(?=.*(新|狮|獅|SG|(?i)Singapore))^((?!(港|台|日|韩|美)).)*$, check-interval=86400, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/shoujiqiyuan/PokemonGOforQuanX/master/IconSet/X008.png
@@ -57,43 +55,25 @@ url-latency-benchmark=🇸🇬SG, server-tag-regex=(?=.*(新|狮|獅|SG|(?i)Sing
 
 
 [filter_remote]
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list, tag=Apple, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Emby/Emby.list, tag=Emby, force-policy=Proxy, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/OpenAI/OpenAI.list, tag=OpenAi, force-policy=Chatgpt, update-interval=172800, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Google/Google.list, tag=Google, force-policy=proxy, update-interval=172800, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/YouTube/YouTube.list, tag=Youtube, force-policy=proxy, update-interval=172800, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Netflix/Netflix.list, tag=Netflix, force-policy=Netflix, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Disney/Disney.list, tag=Disney, force-policy=Disney+, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Microsoft/Microsoft.list, tag=Microsoft, force-policy=proxy, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list, tag=🌍 Forein, force-policy=proxy, update-interval=172800, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaASN/ChinaASN.list, tag=ChinaASN, force-policy=direct, update-interval=172800, opt-parser=false, enabled=true
-FILTER_LAN, tag=LAN, force-policy=direct, update-interval=172800, opt-parser=false, enabled=true
-FILTER_REGION, tag=CN, force-policy=direct, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/1Pangtou/Aovo7/main/Rule/OpenAI, tag=OpenAi, force-policy=Chatgpt, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Netflix.list, tag=Netflix, force-policy=Netflix, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list, tag=Microsoft, force-policy=proxy, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/1Pangtou/Aovo7/main/Rule/Google, tag=Google, force-policy=proxy, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/1Pangtou/Aovo7/main/Rule/Youtube, tag=Youtube, force-policy=proxy, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Keywos/rule/main/us.list, tag=🌍 Forein-Keywos, force-policy=proxy, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list, tag=🌍 Forein-ACL4SSR, force-policy=proxy, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/1Pangtou/Aovo7/main/Rule/Direct, tag=Direct, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
+
 
 
 [rewrite_remote]
 https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Tool/Loon/Plugin/Remove_splash_screen_ads.plugin
-
+https://raw.githubusercontent.com/1Pangtou/Aovo7/main/quantumultx/rewrite/URL%20Rewrite_Baidu, tag=Simple-Search, update-interval=172800, opt-parser=true, enabled=true
 
 
 [filter_local]
 #防止循环请求
-ip-cidr, 0.0.0.0/32, reject, no-resolve
-
-# > 一些比较容易忽视的分流
-host-suffix, kuwo.cn, direct
-host, gg.caixin.com, direct
-host, sdkapp.uve.weibo.com, direct
-
-# > 贴吧屏蔽域名dns查询
-ip-cidr, 180.76.76.200/32, reject
-# > local
-ip-cidr, 10.0.0.0/8, direct
-ip-cidr, 127.0.0.0/8, direct
-ip-cidr, 172.16.0.0/12, direct
-ip-cidr, 192.168.0.0/16, direct
-ip-cidr, 224.0.0.0/24, direct
-ip-cidr, 182.254.116.0/24, direct
+ip-cidr, 0.0.0.0/32, reject
 geoip, cn, direct
 final, proxy
 
