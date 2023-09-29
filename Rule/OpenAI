@@ -1,0 +1,20 @@
+# NAME: OpenAI
+# AUTHOR: blackmatrix7
+# 更新链接：https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/OpenAI/OpenAI.list
+# UPDATED: 2023-07-20 23:25:18
+# HOST-KEYWORD: 1
+# HOST-SUFFIX: 12
+# TOTAL: 13
+HOST-SUFFIX,ai.com
+HOST-SUFFIX,auth0.com
+HOST-SUFFIX,challenges.cloudflare.com
+HOST-SUFFIX,client-api.arkoselabs.com
+HOST-SUFFIX,events.statsigapi.net
+HOST-SUFFIX,featuregates.org
+HOST-SUFFIX,identrust.com
+HOST-SUFFIX,intercom.io
+HOST-SUFFIX,intercomcdn.com
+HOST-SUFFIX,poe.com
+HOST-SUFFIX,sentry.io
+HOST-SUFFIX,stripe.com
+HOST-KEYWORD
