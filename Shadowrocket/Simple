@@ -15,10 +15,6 @@ dns-direct-fallback-proxy = true
 
 [Proxy Group]
 Hong Kong = url-test,url=http://www.gstatic.com/generate_204,interval=1800,tolerance=10,timeout=5,select=0,policy-regex-filter=香港
-Taiwan = url-test,url=http://www.gstatic.com/generate_204,interval=1800,tolerance=10,timeout=5,select=0,policy-regex-filter=台湾
-United States = url-test,url=http://www.gstatic.com/generate_204,interval=1800,tolerance=10,timeout=5,select=0,policy-regex-filter=美国
-Japan = url-test,url=http://www.gstatic.com/generate_204,interval=1800,tolerance=10,timeout=5,select=0,policy-regex-filter=日本
-Korea = url-test,url=http://www.gstatic.com/generate_204,interval=1800,tolerance=10,timeout=5,select=0,policy-regex-filter=韩国
 Singapore = url-test,url=http://www.gstatic.com/generate_204,interval=1800,tolerance=10,timeout=5,select=0,policy-regex-filter=(新加坡|狮城)
 
 [Rule]
