@@ -39,10 +39,10 @@
 ^https:\/\/m\.sogou\.com\/web\/sl\?keyword=yt youtube://results?q= 302
 
 
-^https:\/\/m\.sogou\.com\/web\/sl\?keyword=zlc https://theporndude.com 302
-^https:\/\/m\.sogou\.com\/web\/sl\?keyword=tlj https://zztt15.com 302
-^https:\/\/m\.sogou\.com\/web\/sl\?keyword=wmy https://cn.pornhub.com 302
-^https:\/\/m\.sogou\.com\/web\/sl\?keyword=cz https://www.94jd.cc/ 302
+^https:\/\/m\.sogou\.com\/web\/sl\?keyword=zlc&v=5 https://theporndude.com 302
+^https:\/\/m\.sogou\.com\/web\/sl\?keyword=tlj&v=5 https://zztt15.com 302
+^https:\/\/m\.sogou\.com\/web\/sl\?keyword=wmy&v=5 https://cn.pornhub.com 302
+^https:\/\/m\.sogou\.com\/web\/sl\?keyword=cz&v=5 https://www.94jd.cc/ 302
 [MITM]
 
 hostname = *.google.cn,*.google.com.hk,*sogou.com
