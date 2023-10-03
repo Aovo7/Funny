@@ -35,10 +35,14 @@
 # Youtube
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=yt\+ youtube://results?q= 302
 
-^http:\/\/zlc\.com https://theporndude.com 302
-^http:\/\/tlj\.com https://zztt15.com 302
-^http:\/\/wmy\.com https://cn.pornhub.com 302
-^http:\/\/cz\.com https://www.94jd.cc/ 302
+#^http:\/\/zlc\.com https://theporndude.com 302
+#^http:\/\/tlj\.com https://zztt15.com 302
+#^http:\/\/wmy\.com https://cn.pornhub.com 302
+#^http:\/\/cz\.com https://www.94jd.cc/ 302
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=zlc https://theporndude.com 302
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=tlj https://zztt15.com 302
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=wmy https://cn.pornhub.com 302
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=cz https://www.94jd.cc/ 302
 
 
 [MITM]
