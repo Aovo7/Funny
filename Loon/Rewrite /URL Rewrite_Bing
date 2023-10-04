@@ -1,0 +1,42 @@
+#!name=Simple Search
+#!desc=常用搜索类重定向 by：Aovo7
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1099.png
+
+[Rewrite]
+
+#百度搜索
+^https:\/\/www\.bing\.com\/search\?q=bd\+ https://m.baidu.com/s?from=1000539d&word= 302
+# GitHub
+^https:\/\/www\.bing\.com\/search\?q=gh\+ https://github.com/search?q= 302
+# 谷歌搜索
+^https:\/\/www\.bing\.com\/search\?q=g\+ https://www.google.com/search?q= 302
+#油猴
+^https:\/\/www\.bing\.com\/search\?q=yh\+ https://greasyfork.org/zh-CN/scripts?q=$1 302
+#无追搜索
+^https:\/\/www\.bing\.com\/search\?q=wz\+ https://www.wuzhuiso.com/s?q=$1 302
+#阿里云盘资源搜索
+^https:\/\/www\.bing\.com\/search\?q=al\+ https://www.pansearch.me/search?keyword= 302
+# 谷歌 cn-com 
+^https?://(www\.)?g\.cn https://www.google.com 302
+^https?://(www\.)?google\.cn https://www.google.com 302
+^https?://(www\.)?google\.cn/search https://www.google.com/search 302
+# 知乎
+^https:\/\/www\.bing\.com\/search\?q=zh\+ zhihu://search?q= 302
+# 淘宝
+^https:\/\/www\.bing\.com\/search\?q=tb\+ taobao://s.taobao.com?q= 302
+# 京东
+^https:\/\/www\.bing\.com\/search\?q=jd\+ https://so.m.jd.com/ware/search.action?keyword=$1 302
+# 拼多多
+^https:\/\/www\.bing\.com\/search\?q=pdd\+ pinduoduo://com.xunmeng.pinduoduo/http://mobile.yangkeduo.com/search_result.html?search_key= 302
+# B 站
+^https:\/\/www\.bing\.com\/search\?q=bl\+ bilibili://search?keyword= 302
+# 点评
+^https:\/\/www\.bing\.com\/search\?q=dp\+ dianping://searchshoplist?keyword= 302
+# 豆瓣
+^https:\/\/www\.bing\.com\/search\?q=db\+ douban:///search? 302
+# Youtube
+^https:\/\/www\.bing\.com\/search\?q=yt\+ youtube://results?q= 302
+
+[MITM]
+
+hostname = www.google.cn,www.g.cn,bing.com
