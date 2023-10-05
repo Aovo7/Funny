@@ -27,7 +27,7 @@
 # 京东
 ^https:\/\/www\.bing\.com\/search\?q=jd\+ https://so.m.jd.com/ware/search.action?keyword=$1 302
 # 拼多多
-^https:\/\/www\.bing\.com\/search\?q=pdd\+ pinduoduo://com.xunmeng.pinduoduo/search_result.html?search_key=
+^https:\/\/www\.bing\.com\/search\?q=pdd\+ pinduoduo://com.xunmeng.pinduoduo/search_result.html?search_key= 302
 #B站
 ^https:\/\/www\.bing\.com\/search\?q=bl\+ bilibili://search?keyword= 302
 # 点评
