@@ -26,15 +26,14 @@
 # 淘宝
 ^https:\/\/m\.sogou\.com\/web\/sl\?keyword=tb taobao://s.taobao.com?q= 302
 # 京东
-^https:\/\/m\.sogou\.com\/web\/sl\?keyword=jd https://so.m.jd.com/ware/search.action?keyword=$1 302
+^https:\/\/m\.sogou\.com\/web\/sl\?keyword=jd https://so.m.jd.com/ware/search.action?keyword= 302
 # 拼多多
-^https:\/\/m\.sogou\.com\/web\/sl\?keyword=pdd pinduoduo://com.xunmeng.pinduoduo/http://mobile.yangkeduo.com/search_result.html?search_key= 302
-# B 站
+^https:\/\/m\.sogou\.com\/web\/sl\?keyword=pdd pinduoduo://com.xunmeng.pinduoduo/search_result.html?search_key=
 ^https:\/\/m\.sogou\.com\/web\/sl\?keyword=bl bilibili://search?keyword= 302
 # 点评
 ^https:\/\/m\.sogou\.com\/web\/sl\?keyword=dp dianping://searchshoplist?keyword= 302
 # 豆瓣
-^https:\/\/m\.sogou\.com\/web\/sl\?keyword=db douban:///search? 302
+^https:\/\/m\.sogou\.com\/web\/sl\?keyword=db douban:///search?= 302
 # Youtube
 ^https:\/\/m\.sogou\.com\/web\/sl\?keyword=yt youtube://results?q= 302
 
