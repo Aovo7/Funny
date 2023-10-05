@@ -29,6 +29,7 @@
 ^https:\/\/m\.sogou\.com\/web\/sl\?keyword=jd https://so.m.jd.com/ware/search.action?keyword= 302
 # 拼多多
 ^https:\/\/m\.sogou\.com\/web\/sl\?keyword=pdd pinduoduo://com.xunmeng.pinduoduo/search_result.html?search_key=
+#b站
 ^https:\/\/m\.sogou\.com\/web\/sl\?keyword=bl bilibili://search?keyword= 302
 # 点评
 ^https:\/\/m\.sogou\.com\/web\/sl\?keyword=dp dianping://searchshoplist?keyword= 302
