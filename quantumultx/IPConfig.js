@@ -1,3 +1,4 @@
+//本项目为修改版 原地址https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IPConfig.js
 // if ($response.statusCode != 200) {
 //   $done(Null);
 // }
