@@ -10,7 +10,7 @@ if ($response.statusCode != 200) {
   $done(Null);
 }
 
-const emojis= ['🍓','🥑','🍉','🥦','🍍','🍇','🍒']
+const emojis= ['🍓','🥑','🍉','🥦','🍍','🍋','🫐']
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
