@@ -2,6 +2,9 @@
 #!desc=常用搜索类重定向 by：Aovo7
 
 
+#翻译
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=y\+ url 302 https://fanyi.baidu.com/?aldtype=38319#en/zh/
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=z\+ url 302 https://fanyi.baidu.com/?aldtype=38319#zh/en/
 # GitHub
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=gh\+ url 302 https://github.com/search?q=
 # 谷歌搜索
