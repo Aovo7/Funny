@@ -4,6 +4,11 @@ desc: "聚合搜索"
 http:
 
   rewrite:
+    # 翻译
+    - >-
+      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=y https://fanyi.baidu.com/?aldtype=38319#en/zh/ 302
+    - >-
+      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=z https://fanyi.baidu.com/?aldtype=38319#zh/en/ 302
     # GitHub
     - >-
       ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=gh https://github.com/search?q= 302
