@@ -29,7 +29,6 @@ proxy-providers:
 #策略组
 proxy-groups:
   - name: Proxy
-proxies: null
     type: select
     use: null
     icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/quanqiu(1).png
@@ -37,10 +36,11 @@ proxies: null
       - 🍉手动选择
       - ♻️自动选择
   - name: "🍉手动选择"
-    proxies: null
     type: select
     use: null
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
+    proxies: null
+    filter: null
     include-all: true
   - hidden: true
     name: ♻️自动选择
