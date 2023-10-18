@@ -4,6 +4,9 @@ desc: "聚合搜索"
 http:
 
   rewrite:
+    - >-
+      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=yd https://dict.youdao.com/search?q=$2 302
+# trC
     # 翻译
     - >-
       ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=y https://fanyi.baidu.com/?aldtype=38319#en/zh/ 302
