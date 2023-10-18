@@ -112,6 +112,8 @@ http:
     - "appwk.baidu.com"
     - "api.m.jd.com"
     - "mobile-api.adguard.org"
+    - "weixin110.qq.com"
+    - "security.wechat.com"
     - "*.googlevideo.com"
     - "youtubei.googleapis.com"
 
