@@ -5,7 +5,7 @@ http:
   rewrite:
     # 有道翻译
     - >-
-      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=y(.*)$\+ https://dict.youdao.com/w/$1/#keyfrom=dict2.top 302
+      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=y\+(.*)$ https://dict.youdao.com/w/$1/#keyfrom=dict2.top 302
     # GitHub
     - >-
       ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=gh\+ https://github.com/search?q= 302
