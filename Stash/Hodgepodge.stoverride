@@ -1,0 +1,128 @@
+name: "APP解锁合集"
+desc: "WPS 彩云 扫描 百度阿里网盘 百度文库 不挂科 ADGuard Youtube去广告"
+
+http:
+  rewrite:
+    - >-
+      ^https:\/\/ad\.caiyunapp\.com\/ - reject
+    #>百度文库
+    - >-
+      ^https:\/\/appwk\.baidu\.com\/(naapi\/(recommend\/recommenddoc|wkcircle\/messagetab|search\/wkhotwords|api\/wmadopt)|appapi\/(search\/hot|donate\/detail)|xpage\/interface\/wknaad) - reject
+
+  script:
+
+    - match: ^https:\/\/(vas|account)\.wps\.cn\/(query\/api\/v\d\/list_purchase_info|api\/users\/\d+\/overview)
+      name: "WPSOffice_4"
+      type: response
+      timeout: 30
+      require-body: true
+      max-size: 3145728
+      binary-mode: false
+
+    - match: ^http[s]?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn)\/v2\/user.*$
+      name: "cytq_6"
+      type: response
+      timeout: 30
+      require-body: true
+      max-size: 3145728
+      binary-mode: false
+
+    - match: ^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?
+      name: "CamScanner_9"
+      type: response
+      timeout: 30
+      require-body: true
+      max-size: 3145728
+      binary-mode: false
+
+    - match: https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user
+      name: "BaiduCloud_11"
+      type: response
+      timeout: 30
+      require-body: true
+      max-size: 3145728
+      binary-mode: false
+
+    - match: ^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user))
+      name: "alidrive_13"
+      type: response
+      timeout: 30
+      require-body: true
+      max-size: 3145728
+      binary-mode: false
+
+    - match: ^https:\/\/appwk\.baidu\.com\/naapi\/(user\/getinfo|doc\/getdocdownloadcopywriter)
+      name: "BaiduLibrary_16"
+      type: response
+      timeout: 30
+      require-body: true
+      max-size: 3145728
+      binary-mode: false
+
+    - match: ^https:\/\/appwk\.baidu\.com\/bgk\/(user\/getinfo|doc\/(getdocdownloadcopywriter|quedocsearch\?))
+      name: "BuGuaKe_18"
+      type: response
+      timeout: 30
+      require-body: true
+      max-size: 3145728
+      binary-mode: false
+
+
+    - match: ^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt
+      name: "AdGuardProCrack_22"
+      type: response
+      timeout: 30
+      require-body: true
+      max-size: 3145728
+      binary-mode: false
+
+
+    - match: ^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?
+      name: "UnblockURLinWeChat_26"
+      type: response
+      timeout: 30
+      require-body: true
+      max-size: 3145728
+      binary-mode: false
+
+  mitm:
+    - "*.caiyunapp.*"
+    - "*cyapi*"
+    - "vas.wps.cn"
+    - "account.wps.cn"
+    - "ap*.intsig.net"
+    - "pan.baidu.com"
+    - "*.alipan.com"
+    - "appwk.baidu.com"
+    - "api.m.jd.com"
+    - "mobile-api.adguard.org"
+
+
+script-providers:
+  "WPSOffice_4":
+    url: https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/WPSOffice.js
+    interval: 86400
+  "cytq_6":
+    url: https://raw.githubusercontent.com/WeiRen0/Scripts/main/cytq.js
+    interval: 86400
+  "CamScanner_9":
+    url: https://raw.githubusercontent.com/githubdulong/Script/master/CamScanner.js
+    interval: 86400
+  "BaiduCloud_11":
+    url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
+    interval: 86400
+  "alidrive_13":
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js
+    interval: 86400
+  "BaiduLibrary_16":
+    url: https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/BaiduLibrary.conf
+    interval: 86400
+  "BuGuaKe_18":
+    url: https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/BuGuaKe.js
+    interval: 86400
+  "AdGuardProCrack_22":
+    url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/AdGuardProCrack.js
+    interval: 86400
+  "UnblockURLinWeChat_26":
+    url: https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js
+    interval: 86400
