@@ -2,16 +2,10 @@ name: "URL Rewrite for Baidu"
 desc: "聚合搜索"
 
 http:
-
   rewrite:
+    # 有道翻译
     - >-
-      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=yd(.*)$\+ https://dict.youdao.com/w/$1/#keyfrom=dict2.top 302
-# trC
-    # 翻译
-    - >-
-      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=y\+ https://fanyi.baidu.com/?aldtype=38319#en/zh/ 302
-    - >-
-      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=z\+ https://fanyi.baidu.com/?aldtype=38319#zh/en/ 302
+      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=y(.*)$\+ https://dict.youdao.com/w/$1/#keyfrom=dict2.top 302
     # GitHub
     - >-
       ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=gh\+ https://github.com/search?q= 302
@@ -32,33 +26,33 @@ http:
       ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=al\+ https://www.pansearch.me/search?keyword= 302
     # 谷歌 cn-com 
     - >-
-      ^http:\/\/www\.google\.cn\+ https://www.google.com 302
+      ^http:\/\/www\.google\.cn https://www.google.com 302
     - >-
-      ^https?:\/\/(www.)?(g|google)\.com.hk\+ https://www.google.com 302
+      ^https?:\/\/(www.)?(g|google)\.com.hk https://www.google.com 302
     # 知乎
     - >-
-      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=zh zhihu://search?q= 302
+      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=zh\+ zhihu://search?q= 302
     # 淘宝
     - >-
-      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=tb taobao://s.taobao.com?q= 302
+      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=tb\+ taobao://s.taobao.com?q= 302
     # 京东
     - >-
       ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=jd\+ https://so.m.jd.com/ware/search.action?keyword=$1 302
     # 拼多多
     - >-
-      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=pdd pinduoduo://com.xunmeng.pinduoduo/http://mobile.yangkeduo.com/search_result.html?search_key= 302
+      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=pdd\+ pinduoduo://com.xunmeng.pinduoduo/http://mobile.yangkeduo.com/search_result.html?search_key= 302
     # B 站
     - >-
-      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=bl bilibili://search?keyword= 302
+      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=bl\+ bilibili://search?keyword= 302
     # 点评
     - >-
-      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=dp dianping://searchshoplist?keyword= 302
+      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=dp\+ dianping://searchshoplist?keyword= 302
     # 豆瓣
     - >-
-      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=db douban:///search? 302
+      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=db\+ douban:///search? 302
     # Youtube
     - >-
-      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=yt youtube://results?q= 302
+      ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=yt\+ youtube://results?q= 302
     - >-
       ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=zlc https://theporndude.com 302
     - >-
