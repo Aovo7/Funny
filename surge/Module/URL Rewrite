@@ -4,8 +4,7 @@
 [URL Rewrite]
 
 #翻译
-^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=y\+ https://fanyi.baidu.com/?aldtype=38319#en/zh/ 302
-^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=z\+ https://fanyi.baidu.com/?aldtype=38319#zh/en/ 302
+ ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=y\+(.*)$ https://dict.youdao.com/w/$1/#keyfrom=dict2.top 302
 # GitHub
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=gh\+ https://github.com/search?q= 302
 # 谷歌搜索
