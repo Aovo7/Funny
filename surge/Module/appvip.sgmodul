@@ -1,6 +1,10 @@
 #!name=APP解锁合集
 #!desc=WPS 彩云 扫描 百度阿里网盘 百度文库 不挂科 ADGuard Youtube去广告
 
+[Rule]
+#>Youtube去广告
+AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT-NO-DROP
+
 [URL Rewrite]
 #>彩云广告
 ^https:\/\/ad\.caiyunapp\.com\/ - reject
@@ -37,6 +41,13 @@ renrenshipin_24 = type=http-response, pattern=^https?:\/\/api\.(hujuvod\.com|qwa
 
 #>微信外链跳转
 UnblockURLinWeChat_26 = type=http-response, pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js, timeout=60, script-update-interval=0
+#>Youtube去广告
+youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence)\?,requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.request.beta.js
+youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\?,requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.response.beta.js
+
+[Map Local]
+#>Youtube去广告
+^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data="https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/blank.txt"
 
 [MITM]
 
