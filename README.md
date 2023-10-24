@@ -2,7 +2,7 @@
 自用收藏 无商业用途
 
 ## **影视资源**
-[📺 茶杯狐](https://cupfox.app)    [📺 豌豆Pro](https://wandou.la/)  
+[📺 茶杯狐](https://cupfox.app) &emsp; [📺 豌豆Pro](https://wandou.la/)  
 ## **网盘资源**
 [☁️ Pansearch](https://www.pansearch.me)    [☁️ 猫狸盘搜](https://www.alipansou.com)  
 [☁️ yapan](https://pan.ccof.cc)    [☁️ 小纸条](https://ali.gitcafe.ink)  
