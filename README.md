@@ -33,7 +33,7 @@
 | chxm1023     | https://github.com/chxm1023/Rewrite             |
 
 
-[📺 茶杯狐](https://cupfox.app)            [📺 豌豆Pro](https://wandou.la/)
+[📺 茶杯狐](https://cupfox.app)  &nbsp;&nbsp;&nbsp;   [📺 豌豆Pro](https://wandou.la/)
 
 
 
