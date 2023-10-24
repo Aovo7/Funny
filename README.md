@@ -15,7 +15,7 @@
 | 奈斯搜索       | https://www.niceso.nea    |
 | 阿虚导航站      | https://axutongxue.com    |
 
-| 🏖️**🔧杂乱工具** | Site                          |
+| 🏖️**🔧杂乱工具**   | Site                          |
 |------------|:-----------------------------:|
 | 图片处理       | https://imagestool.com/zh_CN/ |
 | iThinkAi   | https://app.ithinkai.world/   |
