@@ -15,7 +15,7 @@
 [🏖️ chxm1023](https://github.com/chxm1023/Rewrite)
 
 
-![Fighting]()
+![Fighting](https://raw.githubusercontent.com/Aovo7/Funny/main/icon/aniya.webp)
 
 
 
