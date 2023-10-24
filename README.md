@@ -1,6 +1,5 @@
 # Aovo7资源导航
 自用收藏 无商业用途
-![First bar](https://raw.githubusercontent.com/Aovo7/Funny/main/icon/longwiki.png)
 ## **影视资源**
 [📺 茶杯狐](https://cupfox.app) &emsp; [📺 豌豆Pro](https://wandou.la/)  <br><br>
 ## **网盘资源**
