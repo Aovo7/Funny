@@ -1,29 +1,32 @@
 # Aovo7
 自用收藏  无商业用途
-# 资源导航栏
+# *资源导航*
 
-🌍资源网站合集🌍
-📺影视网站
-| 茶杯狐 | https://cupfox.app |
-|-----|--------------------|
-	
-☁️网盘资源	
+| **📺影视资源** | Site               |
+|:---------:|:------------------:|
+| 茶杯狐       | https://cupfox.app |
+
+| **☁️网盘资源** | Site                      |
+|:---------:|:-------------------------:|
 | Pansearch | https://www.pansearch.me  |
-|-----------|---------------------------|
 | 猫狸盘搜      | https://www.alipansou.com |
 | yapan     | https://pan.ccof.cc       |
 | 小纸条       | https://ali.gitcafe.ink   |
 | 奈斯搜索      | https://www.niceso.nea    |
 | 阿虚导航站     | https://axutongxue.com    |
-       
 
-📨订阅转换	
-墙洞转换	https://sub.dler.io
+| **🔧杂乱工具** | Site                          |
+|-----------|:-----------------------------:|
+| 图片处理      | https://imagestool.com/zh_CN/ |
+| iThinkAi  | https://app.ithinkai.world/   |
+| ExcelAi   | https://chatexcel.com/        |
+| 墙洞订阅转换    | https://sub.dler.io           |
 
 
-🔧杂乱工具	
-图片处理	https://imagestool.com/zh_CN/
-iThinkAi	https://app.ithinkai.world/
-ExcelAi	https://chatexcel.com/
+
+
+#胖头的分享/资源导航
+
+
 
 
