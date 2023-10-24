@@ -18,7 +18,7 @@
 
 ![Fighting](https://raw.githubusercontent.com/Aovo7/Funny/main/icon/aniya.webp)
 
-![1](https://visitor-badge.glitch.me/badge?page_id=Aovo7)
+![1](https://visitor-badge.glitch.me/badge?page_id=Aovo7.readme)
 
 
 
