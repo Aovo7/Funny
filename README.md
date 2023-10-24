@@ -12,7 +12,7 @@
 [🔧 图片处理](https://imagestool.com/zh_CN/)  &emsp;   [🔧 iThinkAi](https://app.ithinkai.world/)  <br><br>
 [🔧 ExcelAi](https://chatexcel.com/)  &emsp;   [🔧 墙洞订阅转换](https://sub.dler.io)  <br><br>
 [🔧 网站信息](https://mtool.chinaz.com/othertools) &emsp;   <br><br>
-[🔧 SubStore](https://github.com/sub-store-org/Sub-Store/tree/master)  &emsp;[🔧 ScriptHub](https://github.com/Script-Hub-Org/Script-Hub)  <br><br>
+[🔧 SubStore](https://github.com/sub-store-org/Sub-Store)  &emsp;[🔧 ScriptHub](https://github.com/Script-Hub-Org/Script-Hub)  <br><br>
 ## **Github频道**
 [🏖️ balckmatrix7](https://github.com/blackmatrix7/ios_rule_script)  &emsp;  [🏖️ ACL4SSR ](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash) <br><br>
 [🏖️ chxm1023](https://github.com/chxm1023/Rewrite)  &emsp;   [🏖️ 墨鱼](https://github.com/ddgksf2013) 
