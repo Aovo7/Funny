@@ -18,9 +18,7 @@
 
 ![Fighting](https://raw.githubusercontent.com/Aovo7/Funny/main/icon/aniya.webp)
 
-![Total visitor](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=Aovo7.Funny)
-
-
+![](https://visitor-badge.glitch.me/badge?page_id=Aovo7.readme)
 
 
 
