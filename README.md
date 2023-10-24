@@ -4,7 +4,7 @@
 ## **影视资源**
 [📺 茶杯狐](https://cupfox.app) &emsp; [📺 豌豆Pro](https://wandou.la/)  <br><br>
 ## **网盘资源**
- [☁️ 猫狸盘搜](https://www.alipansou.com)  &emsp; [☁️ 不知名](https://pan.justin3go.com/)  <br><br>
+ [☁️ 猫狸盘搜](https://www.alipansou.com)  &emsp; [☁️ 阿里云盘搜索神器](https://pan.justin3go.com/)  <br><br>
 [☁️ yapan](https://pan.ccof.cc)  &emsp;  [☁️ 小纸条](https://ali.gitcafe.ink)  <br><br>
 [☁️ 奈斯搜索](https://www.niceso.nea)  &emsp; [☁️ Pansearch](https://www.pansearch.me)    <br><br>
 [☁️ 阿虚导航站(综合）](https://axutongxue.com)  <br><br>
