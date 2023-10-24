@@ -8,7 +8,7 @@
 [☁️ yapan](https://pan.ccof.cc)  &emsp;  [☁️ 小纸条](https://ali.gitcafe.ink)  <br><br>
 [☁️ 奈斯搜索](https://www.niceso.nea)  &emsp; [☁️ Pansearch](https://www.pansearch.me)    <br><br>
 [☁️ 阿虚导航站(综合）](https://axutongxue.com)  <br><br>
-## **杂乱工具**
+## **百宝箱**
 [🔧 图片处理](https://imagestool.com/zh_CN/)  &emsp;   [🔧 iThinkAi](https://app.ithinkai.world/)  <br><br>
 [🔧 ExcelAi](https://chatexcel.com/)  &emsp;   [🔧 墙洞订阅转换](https://sub.dler.io)  <br><br>
 [🔧 网站信息](https://mtool.chinaz.com/othertools) &emsp;   <br><br>
