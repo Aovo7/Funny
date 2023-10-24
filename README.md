@@ -1,6 +1,6 @@
 # Aovo7
 自用收藏  无商业用途
-## *资源导航*
+导航*
 
 | **📺影视资源** | Site               |
 |:---------:|:------------------:|
@@ -21,6 +21,12 @@
 | iThinkAi  | https://app.ithinkai.world/   |
 | ExcelAi   | https://chatexcel.com/        |
 | 墙洞订阅转换    | https://sub.dler.io           |
+
+
+| GitHub频道                                        | 🏖️🏖️🏖️                                 |
+|:-----------------------------------------------:|:-----------------------------------:|
+| [墨鱼](https://github.com/chxm1023/Rewrite)       | https://github.com/ddgksf2013       |
+| [chxm1023](https://github.com/chxm1023/Rewrite) | https://github.com/chxm1023/Rewrite |           |
 
 
 
