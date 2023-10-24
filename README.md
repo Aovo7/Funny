@@ -12,8 +12,8 @@
 [🔧 图片处理](https://imagestool.com/zh_CN/)  &emsp;   [🔧 iThinkAi](https://app.ithinkai.world/)  <br><br>
 [🔧 ExcelAi](https://chatexcel.com/)  &emsp;   [🔧 墙洞订阅转换](https://sub.dler.io)  <br><br>
 ## **Github频道**
-[🏖️ balckmatrix7](https://github.com/blackmatrix7/ios_rule_script)  &emsp;   [🏖️ 墨鱼](https://github.com/ddgksf2013)  <br><br>
-[🏖️ chxm1023](https://github.com/chxm1023/Rewrite)
+[🏖️ balckmatrix7](https://github.com/blackmatrix7/ios_rule_script)  &emsp;  [🏖️ ACL4SSR ](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash) <br><br>
+[🏖️ chxm1023](https://github.com/chxm1023/Rewrite)  &emsp;   [🏖️ 墨鱼](https://github.com/ddgksf2013) 
 <br><br>
 
 ![Fighting](https://raw.githubusercontent.com/Aovo7/Funny/main/icon/aniya.webp)
