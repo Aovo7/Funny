@@ -1,8 +1,10 @@
 # Aovo7资源导航
 自用收藏  无商业用途
+
 | **📺影视资源** | Site               |
 |:---------:|:------------------:|
 | 茶杯狐       | https://cupfox.app |
+| 豌豆Pro     | https://wandou.la/ |
 
 | **☁️网盘资源** | Site                      |
 |:---------:|:-------------------------:|
@@ -21,10 +23,14 @@
 | 墙洞订阅转换    | https://sub.dler.io           |
 
 
-| GitHub频道                                        | 🏖️🏖️🏖️                                 |
-|:-----------------------------------------------:|:-----------------------------------:|
-| [墨鱼](https://github.com/chxm1023/Rewrite)       | https://github.com/ddgksf2013       |
-| [chxm1023](https://github.com/chxm1023/Rewrite) | https://github.com/chxm1023/Rewrite |           |
+| GitHub频道     | 🏖️🏖️🏖️                                             |
+|:------------:|:-----------------------------------------------:|
+| balckmatrix7 | https://github.com/blackmatrix7/ios_rule_script |
+| 墨鱼           | https://github.com/ddgksf2013                   |
+| chxm1023     | https://github.com/chxm1023/Rewrite             |
+
+
+
 
 
 
