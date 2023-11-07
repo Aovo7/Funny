@@ -3,6 +3,10 @@
 #不支持的规则数量:0
 #已排除的规则数量:0
 
+
+
+
+DOMAIN-SUFFIX,api.issks.com
 #-----------------以下为解析后的规则-----------------#
 
 DOMAIN-SUFFIX,acl4.ssr
