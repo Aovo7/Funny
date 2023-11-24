@@ -1,5 +1,5 @@
 #!name=APP解锁合集
-#!desc=WPS 彩云 扫描 百度阿里网盘 百度文库 不挂科 ADGuard Youtube去广告
+#!desc=WPS 彩云 扫描 阿里网盘 百度文库 不挂科 ADGuard Youtube去广告
 
 [Rule]
 #>Youtube去广告
@@ -20,12 +20,10 @@ caiyuntianqi_8 = type=http-response, pattern=^https?:\/\/(biz|wrapper|starplucke
 #>扫描全能王
 CamScanner_9 = type=http-response, pattern=^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/githubdulong/Script/master/CamScanner.js, timeout=60, script-update-interval=0
 
-#>百度网盘
-BaiduCloud_11 = type=http-response, pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js, timeout=60, script-update-interval=0
-
 #>阿里云盘 
 alidrive_13 = type=http-response, pattern=^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js, timeout=60, script-update-interval=0
 
+#>百度文库
 BaiduLibrary_16 = type=http-response, pattern=^https:\/\/appwk\.baidu\.com\/naapi\/(user\/getinfo|doc\/getdocdownloadcopywriter), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/BaiduLibrary.conf, timeout=60, script-update-interval=0
 
 #>不挂科
