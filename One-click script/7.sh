@@ -8,6 +8,9 @@ echo "3.一键TUIC"
 echo "4.一键Hy2"
 echo "5.一键Singbox"
 echo "6.一键V2Ray(VMESS/Trojan+WS/gRPC/TCP(+TLS)"
+echo "7.融合怪测试"
+echo "8.三网回程速度测试"
+echo "9.三网回程检测"
 echo "0.退出此脚本"
 echo "输入"renew"更新此脚本"
 echo "当运行相应脚本后 会进入对应脚本的菜单 若想调出此菜单 请输入./7.sh"
@@ -38,6 +41,15 @@ case $input in
         ;;
     renew)
         curl -sS -O https://raw.githubusercontent.com/Aovo7/Funny/main/One-click%20script/7.sh && chmod +x 7.sh && ./7.sh
+        ;;
+    7)
+        curl -L https://gitlab.com/spiritysdx/za/-/raw/main/ecs.sh -o ecs.sh && chmod +x ecs.sh && bash ecs.sh
+        ;;
+    8)
+        bash <(curl -Lso- https://down.wangchao.info/sh/superspeed.sh)
+        ;;
+    9)
+        curl https://raw.githubusercontent.com/zhanghanyun/backtrace/main/install.sh -sSf | sh
         ;;
     *)
         echo "请输入正确的数字或指令哦"
