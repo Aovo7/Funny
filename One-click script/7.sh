@@ -1,5 +1,6 @@
 #!/bin/bash
-
+echo "1. 一键Snell"
+echo "2. 一键SS"
 echo "请输入数字:"
 read number
 
