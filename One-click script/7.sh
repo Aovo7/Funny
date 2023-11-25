@@ -1,4 +1,5 @@
 #!/bin/bash
+# 此脚本为整合菜单 方便使用 各一键脚本均搬运自网络 无商业用途
 echo "1.一键Snell"
 echo "2.一键SS"
 echo "3.一键TUIC"
