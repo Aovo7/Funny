@@ -1,5 +1,5 @@
 # 脚本为搬运自用 无商业用途 作者原网址在下方 
-#脚本运行指令 wget -O snell.sh --no-check-certificate https://git.io/Snell.sh && chmod +x snell.sh && ./snell.sh
+# 脚本运行指令 wget -O snell.sh --no-check-certificate https://raw.githubusercontent.com/Aovo7/Funny/main/One-click%20script/Snell.sh && chmod +x snell.sh && ./snell.sh
 #!/usr/bin/env bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
