@@ -16,6 +16,9 @@ echo "7.一键V2Ray(VMESS/Trojan+WS/gRPC/TCP(+TLS)"
 echo "8.融合怪测试"
 echo "9.三网回程速度测试"
 echo "10.三网回程检测"
+echo "------------------------"
+echo "a.科技lion脚本工具"
+echo "------------------------"
 echo "0.退出此脚本"
 echo "输入"renew"更新此脚本"
 echo "当运行相应脚本后 会进入对应脚本的菜单 若想调出此菜单 请输入./7.sh"
@@ -58,6 +61,9 @@ case $input in
         ;;
     10)
         curl https://raw.githubusercontent.com/zhanghanyun/backtrace/main/install.sh -sSf | sh
+        ;;
+    a)
+        curl -sS -O https://raw.githubusercontent.com/kejilion/sh/main/kejilion.sh && chmod +x kejilion.sh && ./kejilion.sh
         ;;
     *)
         echo "请输入正确的数字或指令哦"
