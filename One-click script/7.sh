@@ -1,5 +1,7 @@
 #!/bin/bash
 # 此脚本为整合菜单 方便使用 各一键脚本均搬运自网络 无商业用途
+echo "------------------------"
+echo "脚本目录"
 echo "1.一键Snell"
 echo "2.一键SS"
 echo "3.一键TUIC"
@@ -7,8 +9,8 @@ echo "4.一键Hy2"
 echo "5.一键Singbox"
 echo "6.一键V2Ray(VMESS/Trojan+WS/gRPC/TCP(+TLS)"
 echo "0.退出此脚本"
-echo "renew.更新此脚本"
-echo "当运行相应脚本后 会进入对应脚本的菜单  若想调出此菜单  请输入./7.sh"
+echo "输入"renew"更新此脚本"
+echo "当运行相应脚本后 会进入对应脚本的菜单 若想调出此菜单 请输入./7.sh"
 echo "请输入数字:"
 read number
 
