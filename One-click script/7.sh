@@ -11,13 +11,10 @@ echo "6.一键V2Ray(VMESS/Trojan+WS/gRPC/TCP(+TLS)"
 echo "0.退出此脚本"
 echo "输入"renew"更新此脚本"
 echo "当运行相应脚本后 会进入对应脚本的菜单 若想调出此菜单 请输入./7.sh"
-echo "请输入数字:"
-read number
+echo "请输入数字或指令:"
+read input
 
-case $number in
-    renew)
-        curl -sS -O https://raw.githubusercontent.com/Aovo7/Funny/main/One-click%20script/7.sh && chmod +x 7.sh && ./7.sh
-        ;;
+case $input in
     0)
         exit 0
         ;;
@@ -39,7 +36,10 @@ case $number in
     6)
         bash <(wget -qO- -o- https://git.io/v2ray.sh)
         ;;
+    renew)
+        curl -sS -O https://raw.githubusercontent.com/Aovo7/Funny/main/One-click%20script/7.sh && chmod +x 7.sh && ./7.sh
+        ;;
     *)
-        echo "请输入正确的数字哦"
+        echo "请输入正确的数字或指令哦"
         ;;
 esac
