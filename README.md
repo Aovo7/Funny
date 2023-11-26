@@ -1,5 +1,5 @@
 # Aovo7资源导航
-收藏自用 无商业用途<br>
+自仓库为收藏自用 无商业用途<br>
 ฅ՞•ﻌ•՞ฅ🍱🍱🍱ฅ՞•ﻌ•՞ฅ
 ## **影视资源**
 [📺 茶杯狐](https://cupfox.app) &emsp; [📺 豌豆Pro](https://wandou.la/)  <br><br>
