@@ -17,7 +17,7 @@ update-url = https://raw.githubusercontent.com/Aovo7/Funny/main/Shadowrocket/Sim
 🇺🇸Openai🍟 = url-test,url=http://www.gstatic.com/generate_204,interval=1200,tolerance=20,timeout=5,select=0,policy-regex-filter=美国|🇺🇸|America|US
 
 [Rule]
-RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list,🇺🇸GOOGLE
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/OpenAI/OpenAI.list,🇺🇸GOOGLE
 RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list,PROXY
 RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list,PROXY
 RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list,DIRECT
