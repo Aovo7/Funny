@@ -1,18 +1,18 @@
 const message = {
-    action: "clear_dns_cache"
+    action: "dns_clear_cache"
 };
 
-$configuration.sendMessage(message).then(response => {
-    if (response.success) {
-        console.log("DNS cache successfully cleared!");
-        $notify("DNS Cache Clear", "Success", "DNS cache successfully cleared!");
+$configuration.sendMessage(message).then(resolve => {
+    if (resolve.ret) {
+        console.log("dnsCache Cleared!");
+        $notify("DNS Cache", "Success", "DNS cache cleared successfully!");
     } else {
-        console.log("Error clearing DNS cache:", response.error);
-        $notify("DNS Cache Clear", "Failed", response.error);
+        console.log(resolve.error);
+        $notify("DNS Cache", "Failed", resolve.error);
     }
     $done();
-}, error => {
-    console.log("Error sending message:", error);
-    $notify("DNS Cache Clear", "Error", "Error sending message: " + error);
+}, reject => {
+    console.log("Error sending message:", reject);
+    $notify("DNS Cache", "Error", "Error in sending message.");
     $done();
 });
