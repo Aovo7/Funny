@@ -1,7 +1,0 @@
-一键脚本合集网站
-https://likeable-fuschia-f06.notion.site/VPS-76f1905f566942dabfa7f95317a0d2ca?pvs=4
-
-Snell一键脚本
-wget -O snell.sh --no-check-certificate https://git.io/Snell.sh && chmod +x snell.sh && ./snell.sh
-安装完后记得开放端口：   ufw allow 端口
-Snell菜单指令：   ./snell.sh
