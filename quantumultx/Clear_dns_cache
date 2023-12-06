@@ -5,11 +5,14 @@ const message = {
 $configuration.sendMessage(message).then(response => {
     if (response.success) {
         console.log("DNS cache successfully cleared!");
+        $notify("DNS Cache Clear", "Success", "DNS cache successfully cleared!");
     } else {
         console.log("Error clearing DNS cache:", response.error);
+        $notify("DNS Cache Clear", "Failed", response.error);
     }
     $done();
 }, error => {
     console.log("Error sending message:", error);
+    $notify("DNS Cache Clear", "Error", "Error sending message: " + error);
     $done();
 });
