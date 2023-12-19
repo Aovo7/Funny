@@ -1,10 +1,12 @@
 #!name=URL Rewrite_Baidu
-#!desc=常用搜索类重定向 by：Aovo7
+#!desc=常用搜索类重定向 by：Aovo7  
+#默认浏览器为百度时  开启Surge则直接搜索为谷歌
 
 [URL Rewrite]
-
+#百度
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=bd\+ https://www.baidu.com/s?wd=$1 302
 #翻译
- ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=y\+(.*)$ https://dict.youdao.com/w/$1/#keyfrom=dict2.top 302
+^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=y\+(.*)$ https://dict.youdao.com/w/$1/#keyfrom=dict2.top 302
 # GitHub
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=gh\+ https://github.com/search?q= 302
 # 谷歌搜索
