@@ -1,7 +1,6 @@
 #!name=URL Rewrite_Baidu
 #!desc=常用搜索类重定向 by：Aovo7  
 #默认浏览器为百度时  开启Surge则直接搜索为谷歌
-#https://www.google.com/imgres?imgurl=https%3A%2F%2Fpic.616pic.com%2Fys_bnew_img%2F00%2F08%2F46%2FzJSUoQXesA.jpg&tbnid=TDMxwgIyVzsp-M&vet=12ahUKEwjOm8_l7ZuDAxWXcfUHHT9vCIsQMygEegQIARBc..i&imgrefurl=https%3A%2F%2F616pic.com%2Fsucai%2F158ix6383.html&docid=yadTSAptxGNV4M&w=800&h=800&q=%E7%B2%BE%E7%81%B5%E7%90%83&ved=2ahUKEwjOm8_l7ZuDAxWXcfUHHT9vCIsQMygEegQIARBc
 
 [URL Rewrite]
 #百度
