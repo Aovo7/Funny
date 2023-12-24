@@ -14,13 +14,13 @@ dns-direct-fallback-proxy = true
 update-url = https://raw.githubusercontent.com/Aovo7/Funny/main/Shadowrocket/Simple
 
 [Proxy Group]
-🇺🇸Openai🍟 = url-test,url=http://www.gstatic.com/generate_204,interval=1200,tolerance=20,timeout=5,select=0,policy-regex-filter=美国|🇺🇸|America|US
-sg = url-test,url=http://www.gstatic.com/generate_204,interval=1200,tolerance=20,timeout=5,select=0,policy-regex-filter=新加坡|sg|Singapore|SG
+🇺🇸Openai🍟 = url-test,url=http://www.gstatic.com/generate_204,interval=3600,tolerance=30,timeout=5,policy-regex-filter=(?=.*(美国|美國|US|洛杉矶|西雅图|(?i)States|American))^((?!(香港|台湾|日本|新加坡|韩国|狮城|南朝鲜|SG|JP|KR|HK|TW|台灣|韓國|獅城)).)*$
+🇸🇬 Video = url-test,url=http://www.gstatic.com/generate_204,interval=3600,tolerance=30,timeout=5,policy-regex-filter=(?=.*(新加坡|狮城|SG|(?i)Singapore))^((?!(香港|台湾|日本|美国|韩国|南朝鲜|US|JP|KR|HK|TW|台灣|美國|韓國)).)*$
 
 [Rule]
 #Proxy
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/OpenAI/OpenAI.list,🇺🇸OPENAI🍟
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Netflix/Netflix.list,PROXY
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/OpenAI/OpenAI.list,🇺🇸Openai🍟
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Netflix/Netflix.list,🇸🇬 Video
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list,PROXY
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Telegram/Telegram.list,PROXY
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Microsoft/Microsoft.list,PROXY
