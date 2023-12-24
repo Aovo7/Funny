@@ -15,6 +15,7 @@ update-url = https://raw.githubusercontent.com/Aovo7/Funny/main/Shadowrocket/Sim
 
 [Proxy Group]
 🇺🇸Openai🍟 = url-test,url=http://www.gstatic.com/generate_204,interval=1200,tolerance=20,timeout=5,select=0,policy-regex-filter=美国|🇺🇸|America|US
+sg = url-test,url=http://www.gstatic.com/generate_204,interval=1200,tolerance=20,timeout=5,select=0,policy-regex-filter=新加坡|sg|Singapore|SG
 
 [Rule]
 #Proxy
