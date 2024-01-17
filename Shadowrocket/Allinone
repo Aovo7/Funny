@@ -1,5 +1,5 @@
-#!name = All in one
-#!desc = 聚合搜索（默认百度 自动跳转Google） Youtube去广告
+#!name = Simple Search
+#!desc = 聚合搜索（默认百度 自动跳转Google）
 
 [URL Rewrite]
 #百度
@@ -39,13 +39,5 @@
 # Youtube
 ^https:\/\/m\.baidu\.com\/s\?from=1000539d&word=yt\+ youtube://results?q= 302
 
-# Youtube去广告 *.googlevideo.com, youtubei.googleapis.com
-^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - reject-200
-
-[Script]
-# YouTube去广告 - 来自Maasea的作品
-YouTube请求 = type=http-request, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence), script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/YouTube/YouTube_remove_ads_request.js, requires-body=true, binary-body-mode=true
-YouTube响应 = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting), script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/YouTube/YouTube_remove_ads_response.js, requires-body=true, binary-body-mode=true
-
 [MITM]
-hostname = %APPEND% www.google.cn,www.g.cn,*m.baidu.com, *.googlevideo.com, youtubei.googleapis.com
+hostname = %APPEND% www.google.cn,www.g.cn,*m.baidu.com
