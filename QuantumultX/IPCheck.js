@@ -11,7 +11,7 @@ function toFlag(code) {
 
 const data = JSON.parse($response.body);
 
-const title = `${toFlag(data.countryCode)} ${data.regionName}`;
+const title = `${toFlag(data.countryCode)} ${data.city}`;
 const subtitle = `${data.as}`;
 const ip = data.query;
 const description = `${data.countryCode}-${data.city}\n${data.timezone}\n${data.query}\n经度:${data.lon} 纬度:${data.lat}\n${data.isp || ''}${data.org ? '\n' + data.org : ''}`;
