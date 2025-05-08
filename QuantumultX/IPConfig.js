@@ -1,26 +1,19 @@
-if ($response.statusCode != 200) {
-  $done(Null);
+if ($response.statusCode !== 200) {
+  $done(null);
 }
 
-var flags = new Map([
-  ["JP", "🇯🇵"], ["US", "🇺🇸"], ["CN", "🇨🇳"], ["SG", "🇸🇬"], ["HK", "🇭🇰"],
-  ["TW", "🇨🇳"], ["KR", "🇰🇷"], ["DE", "🇩🇪"], ["GB", "🇬🇧"], ["RU", "🇷🇺"],
-  ["FR", "🇫🇷"], ["IN", "🇮🇳"], ["CA", "🇨🇦"], ["AU", "🇦🇺"], ["MY", "🇲🇾"]
-]);
+function toFlag(code) {
+  const cc = code.toUpperCase();
+  const offset = 0x1f1e6;
+  const res = [...cc].map(c => String.fromCodePoint(offset + c.charCodeAt(0) - 65)).join('');
+  return res === '🇹🇼' ? '🇨🇳' : res;
+}
 
-var obj = JSON.parse($response.body);
+const data = JSON.parse($response.body);
 
-// 字段提取
-var countryCode = obj['countryCode'] || 'XX';
-var regionName  = obj['regionName'] || '未知区域';
-var city        = obj['city'] || '未知城市';
-var asn         = obj['as'] || '未知运营商';
-var isp         = obj['isp'] || '未知ISP';
-var ip          = obj['query'] || '0.0.0.0';
-
-// 构造信息面板内容
-var title = (flags.get(countryCode) || '🌐') + ' ' + regionName;
-var subtitle = asn;
-var description = `${countryCode}-${city}\n${isp}\n${asn}\n${ip}`;
+const title = `${toFlag(data.countryCode)} ${data.regionName}`;
+const subtitle = `${data.as}`;
+const ip = data.query;
+const description = `${data.countryCode}-${data.city}\n${data.timezone}\n${data.query}\n经度:${data.lon} 纬度:${data.lat}\n${data.isp || ''}${data.org ? '\n' + data.org : ''}`;
 
 $done({ title, subtitle, ip, description });
