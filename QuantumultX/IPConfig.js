@@ -16,9 +16,14 @@ var flags = new Map([
 
 var obj = JSON.parse($response.body);
 
-var title = flags.get(obj['countryCode']) + ' ' + obj['regionName'];
-var subtitle = emojis[getRandomInt(emojis.length)] + ' ' + obj['as'] + ' ' + obj['query'];
-var ip = obj['query'];
-var description = obj['countryCode'] + '-' + obj['city'] + '\n' + obj['as'] + '\n' + obj['query'];
+var country = obj['countryCode'] || 'XX';
+var city = obj['city'] || '未知城市';
+var region = obj['regionName'] || '未知区域';
+var as = obj['as'] || '未知运营商';
+var ip = obj['query'] || '0.0.0.0';
+
+var title = (flags.get(country) || '🌐') + ' ' + region;
+var subtitle = emojis[getRandomInt(emojis.length)] + ' ' + as + ' ' + ip;
+var description = country + '-' + city + '\n' + as + '\n' + ip;
 
 $done({title, subtitle, ip, description});
